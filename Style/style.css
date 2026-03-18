@@ -33,17 +33,24 @@ article {
 
 }
 
-
-
-footer {
- display: flex;
- background-color: rgb(39, 10, 10);
- color: white;
- justify-content: space-around;
- align-items: center;
- margin: 2% 0%;
- padding: 1%;
+ footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgb(39, 10, 10);
+    color: white;
+    position: absolute;
+    gap: 20px;
+    height: 17%;
 }
+
+footer div {
+    font-size: smaller;
+    align-items: center;
+    margin-left: 5%;
+    width: 350px;
+}
+
 
 div {
     width: 20%;
@@ -60,6 +67,7 @@ div {
     flex-direction: column; 
     gap: 10px;
     width: 300px;
+    margin-bottom: 2%;
 }
 
 textarea {
