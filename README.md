@@ -39,6 +39,7 @@ O site foi estruturado com foco em organização, semântica e experiência do u
 
 * HTML5
 * CSS3
+* BOOTSTRAP
 
 ---
 
