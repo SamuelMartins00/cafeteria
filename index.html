@@ -14,13 +14,14 @@
     <header>
       <div class="navbar navbar-expand-sm bg-muted navbar-muted">
         <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"> <img class="img-fluid" src="./Imagem/logo2.0.png" alt="Logo" style="max-width: 100px"> </a> <!-- COLOCAR A LOGO AQUI MUCA-->
+        <a class="navbar-brand" href="index.html">LOGO</a> <!-- COLOCAR A LOGO AQUI -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item dropdown-menu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
@@ -81,18 +82,55 @@
         <h2> Venha Descobrir nossos Coffes Codes !</h2>
     </section>
     
-    <article>
-        <nav><h2>Mocha Code</h2>
-           <p style="width: 50%;">
-            Layer 0 (Base): Uma camada densa de chocolate premium, garantindo o "commit" inicial de doçura.
-           <br>
-            Core (Corpo): Espresso intenso fundido com leite vaporizado, criando a interface suave e robusta que o seu paladar exige.
-           <br>
-            The UI (Topo): Uma nuvem de chantilly polvilhada com cacau, oferecendo a experiência de usuário mais gratificante que uma xícara pode proporcionar.
-           </p>
-        </nav>  
+    <article class="row row-cols-2">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">Coffee</a>
+          </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+        </div>
 
-        <img src="./Imagem/exemplo café.jpg" alt="Mocha Café"
+        <div class="card">
+          <div class-header>
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">Base</a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+             Uma camada densa de chocolate premium, garantindo o "commit" inicial de doçura.
+          </div>
+        </div>
+        </div>
+
+        <div class="card">
+          <div class-header>
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">Corpo</a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            Espresso intenso fundido com leite vaporizado, criando a interface suave e robusta que o seu paladar exige.          
+          </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class-header>
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">Topo</a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            Uma nuvem de chantilly polvilhada com cacau, oferecendo a experiência de usuário mais gratificante que uma xícara pode proporcionar.          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div> 
+
+        <img src="./Imagem/mochaet2.jpg" alt="Mocha Café"
         width="30%"
         height="30%">
     </article>
