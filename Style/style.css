@@ -89,9 +89,3 @@ header {
     margin-bottom: 2%;
 }
 
-article {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 5px;
-  padding: 5px;
-}
