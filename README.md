@@ -57,7 +57,7 @@ CoffeeCode/
 │   ├── Style/
 │   │   └── style.css
 │   └── Imagem/
-│       ├── logo2.0.png
+│       ├── logo3.0.png
 │       ├── ambiente2.0.png
 │       ├── equipe.jpg
 │       ├── contatocoffee.jpg
