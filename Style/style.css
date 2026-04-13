@@ -85,7 +85,17 @@ main {
 }
     */
 
+ body {
+    background-color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 header {
     margin-bottom: 2%;
+}
+
+section {
+    margin: auto;
+    align-items: center;
 }
 

@@ -15,94 +15,80 @@
     <header>
       <div class="navbar navbar-expand-sm bg-muted navbar-muted">
         <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">LOGO</a> <!-- COLOCAR A LOGO AQUI -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-          </ul>
+          <a class="navbar-brand" href="index.html"><img class="img-fluid" style="max-width: 120px;" src="./Imagem/logo3.0.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
   
-          <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
+            <form class="d-flex">
+              <input class="form-control me-2 h-99" type="text" placeholder="Pesquisar">
               <button class="btn btn-secondary" type="button">Pesquisar</button>
-          </form>
+            </form>
           </div>
-      </div>
+        </div>
     </header>
 
-    <section>
-        <img src="./Imagem/equipe.jpg" alt="imagemsobrenós"
-        width="500px"
-        height="350px"> 
+    <section class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img class="img-fluid" src="./Imagem/equipe.jpg" alt="imagemsobrenós">
+        </div>
 
-        <nav>
+        <div class="col-md-6">
           <h1>Sobre nós</h1>
-          <p style="width: 85%;">A Coffee Code é mais do que uma cafeteria: é um espaço criado para inspirar pessoas. Nosso objetivo é oferecer cafés de alta qualidade em um ambiente acolhedor, onde todos se sintam à vontade.
+          <p>A Coffee Code é mais do que uma cafeteria: é um espaço criado para inspirar pessoas. Nosso objetivo é oferecer cafés de alta qualidade em um ambiente acolhedor, onde todos se sintam à vontade.
            Trabalhamos com grãos selecionados e buscamos sempre o melhor preparo para garantir sabor, aroma e uma experiência especial em cada xícara. Nossa equipe é apaixonada por café e dedicada a proporcionar um atendimento amigável e atencioso.
            Acreditamos que café é mais do que uma bebida — é um momento de pausa, conexão e criatividade.</p>
-        </nav>
-
+          </div>
+      </div>
     </section>
 
     <h2 style="padding-left: 40%; margin: 2%;">Valores</h2>
     <article> 
         <nav style="display: flex; justify-content: space-between;">
-            <div>
+            <div class="items m-2">
                 <h3>Integridade</h3>
                 <p>Atuamos com transparência e ética em todas as relações, priorizando a confiança acima de tudo.</p>
             </div>
 
-            <div>
+            <div class="items m-2">
                 <h3>Inovação</h3>
                 <p>Buscamos constantemente novas soluções e tecnologias para entregar resultados que superem expectativas.</p>
             </div>
 
-            <div>
+            <div class="items m-2">
                 <h3>Excelência</h3>
                 <p>Comprometimento total com a qualidade e o rigor técnico em cada detalhe do nosso trabalho.</p>
             </div>
             
-            <div>
+            <div class="items m-2">
                 <h3>Respeito</h3>
                 <p>Valorizamos a diversidade e promovemos um ambiente inclusivo para todos.</p>
             </div>
         </nav>
     </article>
 
-  <footer>
+  <footer class="bg-dark text-light text-center py-4 mt-5 fixed-buttom">
+    <div class="container">
   <div>
-    <p>© 2024 Coffee Code</p>
-    <p>Todos os direitos reservados</p>
+    <p class="mb-0">© 2024 Coffee Code</p>
+    <p class="mb-0">Todos os direitos reservados</p>
   </div>
-
-  <div>
-    <p>Endereço:</p>
-    <p>Rua do Café, 123 - Centro, Cidade do Sabor</p>
-  </div>
-
-  <div>
-    <p>Contato:</p>
-    <p>(11) 1234-5678</p>
-    <p>contato@coffeecode.com</p>
-  </div>
-
-  <div>
-    <p>Redes sociais:</p>
-    <a href="#">Facebook</a><br>
-    <a href="#">Instagram</a><br>
-    <a href="#">Twitter</a>
-  </div>
-</footer>
-
+    </div>
+  </footer>
+  
 </body>
 </html>

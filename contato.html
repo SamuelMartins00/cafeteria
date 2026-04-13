@@ -12,90 +12,78 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-      <header>
+    <header>
       <div class="navbar navbar-expand-sm bg-muted navbar-muted">
         <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">LOGO</a> <!-- COLOCAR A LOGO AQUI -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          
-         <div class="dropdown">
-          <ul class="navbar-nav ms-auto">
-            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">Home</button>
-              <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="index.html">Home0</a></li>
-                 <li><a class="dropdown-item" href="index.html">Home1</a></li>
-              </ul>
-          </ul>
-         </div>  
-            <li class="nav-link">
-              <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-          </ul>
+          <a class="navbar-brand" href="index.html"><img class="img-fluid" style="max-width: 120px;" src="./Imagem/logo3.0.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contato.html">Contato</a>
+              </li>
+            </ul>
   
-          <form class="d-flex">
-              <input class="form-control me-2" type="text" placeholder="Search">
+            <form class="d-flex">
+              <input class="form-control me-2 h-99" type="text" placeholder="Pesquisar">
               <button class="btn btn-secondary" type="button">Pesquisar</button>
-          </form>
+            </form>
           </div>
-      </div>
+        </div>
     </header>
 
-    <section class="Contato">
-        <img src="./Imagem/contatocoffee.jpg" alt="imagemsobrenós"
-        width="500px"
-        height="350px"> 
+    <section class="container py-5">
+      <div class="row align-tems-center">
+        <div class="col-md-6">
+        <img class="img-fluid" src="./Imagem/contatocoffee.jpg" alt="imagemsobrenós"> 
+        </div>
 
-        <nav>
+        <div class="col-md-6">
         <h1>Entre em Contato</h1>
-        <p style="width: 85%; text-align: center;">
+        <p>
             Tem alguma dúvida, sugestão ou quer saber mais sobre a Coffee Code? Estamos sempre prontos para ouvir você! Acreditamos que a melhor experiência vai além do café — ela também está na conexão com nossos clientes. Por isso, sua opinião é muito importante para nós. Preencha o formulário abaixo e entraremos em contato o mais breve possível. Seja para elogios, dúvidas ou sugestões, será um prazer falar com você. Se preferir, venha nos visitar e aproveite um ambiente acolhedor com um café especial preparado com todo cuidado.
         </p>
-        <p>Esperamos por você!</p>
-        </nav>
+      </div>
+      </div>
     </section>
-     
-    <article class="form"> 
-     <form action="/contato.html">
-        <label for="fname">Escreva seu nome:</label>
-        <input type="text" id="fname" name="fname">
-        <label for="email">E-mail Válido:</label>
-        <input type="email" id="email" required>
-        <label for="mensagem">Escreva sua mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea><br>
-        <input type="submit" value="Submit">
-     </form>
+    
+    <div class="text-center"><h4>Esperamos por você!</h4></div>
+
+    <article> 
+         <form action="/action_page.php">
+        <div class="mb-3 w-auto">
+    <label for="pwd" class="form-label">Nome:</label>
+    <input type="text" class="form-control" id="name" placeholder="Digite seu nome" name="text">
+  </div>
+  <div class="mb-3 mt-3 w-auto">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  </div>
+  <div class="mb-3 w-auto">
+  <label for="comment">Texto:</label>
+<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
     </article>
 
- <footer>
+  <footer class="bg-dark text-light text-center py-4 mt-5">
+    <div class="container">
   <div>
-    <p>© 2024 Coffee Code</p>
-    <p>Todos os direitos reservados</p>
+    <p class="mb-0">© 2024 Coffee Code</p>
+    <p class="mb-0">Todos os direitos reservados</p>
   </div>
-
-  <div>
-    <p>Endereço:</p>
-    <p>Rua do Café, 123 - Centro, Cidade do Sabor</p>
-  </div>
-
-  <div>
-    <p>Contato:</p>
-    <p>(11) 1234-5678</p>
-    <p>contato@coffeecode.com</p>
-  </div>
-
-  <div>
-    <p>Redes sociais:</p>
-    <a href="#">Facebook</a><br>
-    <a href="#">Instagram</a><br>
-    <a href="#">Twitter</a>
-  </div>
-</footer>
+    </div>
+  </footer>
   
 
 </body>
