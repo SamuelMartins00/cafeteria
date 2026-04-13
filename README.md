@@ -8,7 +8,7 @@ A proposta do projeto é apresentar a marca, seus produtos e permitir que os cli
 
 ## 🌐 Visão Geral
 
-O site foi estruturado com foco em organização, semântica e experiência do usuário, contendo páginas informativas e um formulário funcional de contato.
+O site foi estruturado com foco em organização, semântica e experiência do usuário, contendo páginas informativas, um formulário funcional de contato e além disso as páginas são responsivas.
 
 ---
 
@@ -73,10 +73,11 @@ CoffeeCode/
 Durante o desenvolvimento deste projeto, foram praticados:
 
 * Uso de tags semânticas (`header`, `nav`, `section`, `article`, `footer`)
-* Organização de layout com **Flexbox**
+* Organização de layout com **Grid**
 * Criação e estilização de formulários
 * Separação de arquivos HTML e CSS
 * Estruturação de páginas interligadas
+* Estruturação com Bootstrap
 
 ---
 
