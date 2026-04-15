@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 Coffee Code{% block title %}/home{% endblock %}
-{% block content %} 
+{% block content %}
 
 <body>
 
@@ -15,13 +15,16 @@ Coffee Code{% block title %}/home{% endblock %}
 
       <div class="carousel-inner rounded">
         <div class="carousel-item active">
-          <img src="{{url_for('static', filename='/carrossel1.jpg')}}" alt="Cafeteria" class="d-block" style="width:100%">
+          <img src="{{url_for('static', filename='/carrossel1.jpg')}}" alt="Cafeteria" class="d-block"
+            style="width:100%">
         </div>
         <div class="carousel-item">
-          <img src="{{url_for('static', filename='/carrossel2.jpg')}}" alt="Cafeteria" class="d-block" style="width:100%">
+          <img src="{{url_for('static', filename='/carrossel2.jpg')}}" alt="Cafeteria" class="d-block"
+            style="width:100%">
         </div>
         <div class="carousel-item">
-          <img src="{{url_for('static', filename='/carrossel3.jpg')}}" alt="Cafeteria" class="d-block" style="width:100%">
+          <img src="{{url_for('static', filename='/carrossel3.jpg')}}" alt="Cafeteria" class="d-block"
+            style="width:100%">
         </div>
       </div>
 
@@ -174,11 +177,11 @@ Coffee Code{% block title %}/home{% endblock %}
       </div>
 
       <div class="col-md-6">
-        <img src="{{url_for('static', filename='/cappuccino.jpg')}}" alt="Mocha Café" class="img-fluid rounded w-65 h-65"
-          style="object-fit: cover;">
+        <img src="{{url_for('static', filename='/cappuccino.jpg')}}" alt="Mocha Café"
+          class="img-fluid rounded w-65 h-65" style="object-fit: cover;">
       </div>
 
     </div>
   </article>
 
-{% endblock %}
+  {% endblock %}
