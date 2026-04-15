@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+Coffee Code{% block title %}/home{% endblock %}
+{% block content %} 
+
+<body>
+
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img class="img-fluid" src="{{url_for('static', filename='/equipe.jpg')}}" alt="imagemsobrenós">
+      </div>
+
+      <div class="col-md-6">
+        <h1>Sobre nós</h1>
+        <p>A Coffee Code é mais do que uma cafeteria: é um espaço criado para inspirar pessoas. Nosso objetivo é
+          oferecer cafés de alta qualidade em um ambiente acolhedor, onde todos se sintam à vontade.
+          Trabalhamos com grãos selecionados e buscamos sempre o melhor preparo para garantir sabor, aroma e uma
+          experiência especial em cada xícara. Nossa equipe é apaixonada por café e dedicada a proporcionar um
+          atendimento amigável e atencioso.
+          Acreditamos que café é mais do que uma bebida — é um momento de pausa, conexão e criatividade.</p>
+      </div>
+    </div>
+  </section>
+
+  <h2 style="padding-left: 40%; margin: 2%;">Valores</h2>
+  <article>
+    <nav style="display: flex; justify-content: space-between;">
+      <div class="items m-2">
+        <h3>Integridade</h3>
+        <p>Atuamos com transparência e ética em todas as relações, priorizando a confiança acima de tudo.</p>
+      </div>
+
+      <div class="items m-2">
+        <h3>Inovação</h3>
+        <p>Buscamos constantemente novas soluções e tecnologias para entregar resultados que superem expectativas.</p>
+      </div>
+
+      <div class="items m-2">
+        <h3>Excelência</h3>
+        <p>Comprometimento total com a qualidade e o rigor técnico em cada detalhe do nosso trabalho.</p>
+      </div>
+
+      <div class="items m-2">
+        <h3>Respeito</h3>
+        <p>Valorizamos a diversidade e promovemos um ambiente inclusivo para todos.</p>
+      </div>
+    </nav>
+  </article>
+
+  {% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+Coffee Code{% block title %}/contato{% endblock %}
+{% block content %} 
+
+<body>
+
+  <section class="container py-5">
+    <div class="row align-tems-center">
+      <div class="col-md-6">
+        <img class="img-fluid" src="{{url_for('static', filename='/contatocoffee.jpg')}}" alt="imagemsobrenós">
+      </div>
+
+      <div class="col-md-6">
+        <h1>Entre em Contato</h1>
+        <p>
+          Tem alguma dúvida, sugestão ou quer saber mais sobre a Coffee Code? Estamos sempre prontos para ouvir você!
+          Acreditamos que a melhor experiência vai além do café — ela também está na conexão com nossos clientes. Por
+          isso, sua opinião é muito importante para nós. Preencha o formulário abaixo e entraremos em contato o mais
+          breve possível. Seja para elogios, dúvidas ou sugestões, será um prazer falar com você. Se preferir, venha nos
+          visitar e aproveite um ambiente acolhedor com um café especial preparado com todo cuidado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center">
+    <h4>Esperamos por você!</h4>
+  </div>
+
+  <article class="container m-3">
+    <form action="/action_page.php">
+      <div class="mb-3 w-auto">
+        <label for="pwd" class="form-label">Nome:</label>
+        <input type="text" class="form-control" id="name" placeholder="Digite seu nome" name="text">
+      </div>
+      <div class="mb-3 mt-3 w-auto">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="mb-3 w-auto">
+        <label for="comment">Texto:</label>
+        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+      </div>
+      <button type="submit" class="btn btn-secondary">Enviar</button>
+    </form>
+  </article>
+
+{% endblock %}

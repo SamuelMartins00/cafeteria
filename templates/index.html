@@ -1,50 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Style/style.css">
-  <title>Coffee Code</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
+{% extends "base.html" %}
+Coffee Code{% block title %}/home{% endblock %}
+{% block content %} 
 
 <body>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-
-  <header>
-    <div class="navbar navbar-expand-sm bg-muted navbar-muted">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img class="img-fluid" style="max-width: 120px;"
-            src="./Imagem/logo3.0.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-          </ul>
-
-          <form class="d-flex">
-            <input class="form-control me-2 h-99" type="text" placeholder="Pesquisar">
-            <button class="btn btn-secondary" type="button">Pesquisar</button>
-          </form>
-        </div>
-      </div>
-  </header>
 
   <main class="container">
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -57,13 +15,13 @@
 
       <div class="carousel-inner rounded">
         <div class="carousel-item active">
-          <img src="./Imagem/carrossel1.jpg" alt="Cafeteria" class="d-block" style="width:100%">
+          <img src="{{url_for('static', filename='/carrossel1.jpg')}}" alt="Cafeteria" class="d-block" style="width:100%">
         </div>
         <div class="carousel-item">
-          <img src="./Imagem/carrossel2.jpg" alt="Cafeteria" class="d-block" style="width:100%">
+          <img src="{{url_for('static', filename='/carrossel2.jpg')}}" alt="Cafeteria" class="d-block" style="width:100%">
         </div>
         <div class="carousel-item">
-          <img src="./Imagem/carrossel3.jpg" alt="Cafeteria" class="d-block" style="width:100%">
+          <img src="{{url_for('static', filename='/carrossel3.jpg')}}" alt="Cafeteria" class="d-block" style="width:100%">
         </div>
       </div>
 
@@ -150,7 +108,7 @@
       </div>
 
       <div class="col-md-6">
-        <img src="./Imagem/mochaet2.jpg" alt="Mocha Café" class="img-fluid rounded">
+        <img src="{{url_for('static', filename='/mochaet2.jpg')}}" alt="Mocha Café" class="img-fluid rounded">
       </div>
 
     </div>
@@ -216,22 +174,11 @@
       </div>
 
       <div class="col-md-6">
-        <img src="./Imagem/cappuccino.jpg" alt="Mocha Café" class="img-fluid rounded w-65 h-65"
+        <img src="{{url_for('static', filename='/cappuccino.jpg')}}" alt="Mocha Café" class="img-fluid rounded w-65 h-65"
           style="object-fit: cover;">
       </div>
 
     </div>
   </article>
 
-  <footer class="bg-dark text-light text-center py-4 mt-5">
-    <div class="container">
-      <div>
-        <p class="mb-0">© 2024 Coffee Code</p>
-        <p class="mb-0">Todos os direitos reservados</p>
-      </div>
-    </div>
-  </footer>
-
-</body>
-
-</html>
+{% endblock %}
