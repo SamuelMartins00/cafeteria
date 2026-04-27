@@ -2,7 +2,7 @@
 # ☕ Coffee Code
 
 O **Coffee Code** é um projeto de site desenvolvido em HTML e CSS para uma cafeteria moderna.
-A proposta do projeto é apresentar a marca, seus produtos e permitir que os clientes entrem em contato de forma simples e intuitiva.
+A proposta do projeto é apresentar uma marca, seus produtos de forma simples e intuitiva e principalmente desenvolver habilidades com as liguagens.
 
 ---
 
